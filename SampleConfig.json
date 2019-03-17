@@ -1,0 +1,10 @@
+
+{
+    "AllConns": {
+        "MongoCon1": {
+            "ConnStr": "mongodb://localhost:27017",
+            "Description" : "Sample MongoDB database"
+        }
+    }
+}
+

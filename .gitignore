@@ -1,0 +1,22 @@
+
+#vs Code IDE configuration files
+#.vscode
+
+# Informix Connection Information
+ConnInfo.json
+MyConfig.json
+
+**/*.map
+**/node_modules
+package-lock.json
+
+*.log
+tmp
+tmp.*
+0
+1
+0.*
+1.*
+
+# you may comment this if you are using it for production
+package-lock.json
