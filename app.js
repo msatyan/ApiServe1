@@ -12,7 +12,6 @@ const bodyParser = require('body-parser');
 // app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 const rt_index = require('./routes/index');
-const rt_order = require('./routes/order');
 const rt_product = require('./routes/product_router');
 const rt_customer = require('./routes/customer');
 
@@ -35,7 +34,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Defining high level routes
 app.use('/', rt_index);
-app.use('/v1/order', rt_order);
 app.use('/v1/product', rt_product);
 app.use('/v1/customer', rt_customer);
 
