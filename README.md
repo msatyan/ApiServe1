@@ -141,7 +141,7 @@ curl    -X GET  http://localhost:3000/v1/product/5c8d8e0974a64030b4bb60bf
 # curl -u dbuser1:MyPassword -X GET  http://localhost:3000/v1/product
 ```
 
-
+### Delete
 ```bash
 #DELETE
 curl    -X DELETE  http://localhost:3000/v1/product/< ID of the record >
@@ -186,7 +186,7 @@ Specific Item:
 200 (OK) or 204 (No Content). 404 (Not Found), if ID not found or invalid.
 ```
 
-#### DELETE Delete
+#### DELETE
 ```
 Entire Collection:
 404 (Not Found), unless you want to delete the whole collection—not often desirable.
