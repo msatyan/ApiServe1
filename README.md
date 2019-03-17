@@ -38,18 +38,22 @@ API Documentation
 
 #### Get the demo source code
 ```bash
-cd /work
+# cd /work
+cd c:\work
+
 git clone https://github.com/msatyan/ApiServe1.git
 
 # fetch all dependent packages
-cd /work/ApiServe1
+# cd /work/ApiServe1
+cd c:\work\ApiServe1
 npm install
 ```
 
 
 ### Starting the REST API service
 ```bash
-cd /work/ApiServe1
+# cd /work/ApiServe1
+cd c:\work\ApiServe1
 
 # Make sure the mongodb is up and running
 # Edit app.js to update the mongodb connection information
@@ -63,7 +67,9 @@ npm start
 Currently the unit test is configured to run on watch mode with the help of nodemon. The nodemon watchout for source code change and automatically restart the test.
 ```bash
 # Edit test/test_helper.js to update the mongodb connection information used for test.
-cd /work/ApiServe1
+# cd /work/ApiServe1
+cd c:\work\ApiServe1
+
 npm  run test
 ```
 

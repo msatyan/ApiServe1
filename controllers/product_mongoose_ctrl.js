@@ -1,15 +1,5 @@
 const Product = require( '../models/product_mongoose_model' )
 
-// Mongoose API
-// https://mongoosejs.com/docs/api.html
-
-// Introduction to Mongoose for MongoDB
-// https://medium.freecodecamp.org/introduction-to-mongoose-for-mongodb-d2a7aa593c57
-
-// ES6 Arrow Functions
-// https://www.sitepoint.com/es6-arrow-functions-new-fat-concise-syntax-javascript/
-// https://codeburst.io/javascript-arrow-functions-for-beginners-926947fc0cdc
-
 class CProductCtrl {
     constructor() {
     }
