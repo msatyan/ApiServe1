@@ -315,3 +315,31 @@ https://code.visualstudio.com/
 https://code.visualstudio.com/docs/nodejs/nodejs-debugging
 ```
 
+### Sample Docker Build & Test
+```bash
+# to cleanup then only
+docker system prune
+docker system prune -a
+
+
+docker build -t nhw1 .
+# delete an image
+# docker rmi nhw1 <image id>
+
+docker images
+# maped local-port:container-port
+# docker run  -it nhw1 /bin/bash
+docker run -it -p 3000:3000 -d nhw1
+
+# Basic test
+curl -X GET http://localhost:3000/v1/product
+
+
+#### to stop
+# get the ps
+docker ps | grep nhw1
+# d0d7b996862d
+
+# eg:
+docker stop  d0d7b996862d
+`
